@@ -113,10 +113,10 @@ WSGI_APPLICATION = 'HelpMi.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'd523afeuuttp4a',
-        'USER': 'mumvlvplahvvdm',
-        'PASSWORD': '956237ca829eb6b9120c9c58754de3b0a3dc5a43053a2efda40904d115b9c488',
-        'HOST': 'ec2-54-158-247-210.compute-1.amazonaws.com',
+        'NAME': 'daod9i03t4farg',
+        'USER': 'rnbhfwphrlrgzt',
+        'PASSWORD': 'ac7ddec0dea9f553c724c6b0298d4c04ff67334cb2c5f019d4848c341aa02236',
+        'HOST': 'ec2-54-157-74-211.compute-1.amazonaws.com',
         'PORT': '5432',
     }
 }
