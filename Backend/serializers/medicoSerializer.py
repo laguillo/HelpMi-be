@@ -12,19 +12,19 @@ class MedicoSerializer(serializers.ModelSerializer):
             'Apellido Medico : ': instance.usuario_m.apellido,
             'Especialidades : ': instance.id.especialidad,
             'Diagnosticos : ': instance.id.diagnostico,
-            'Nombre Paciente : ': instance.historia.paciente.usuario.nombre,
-            'Apellido Paciente : ': instance.historia.paciente.usuario.nombre,
+            # 'Nombre Paciente : ': instance.historia.paciente.usuario.nombre,
+            # 'Apellido Paciente : ': instance.historia.paciente.usuario.nombre,
 
-            'Historia : ':{
+            # 'Historia : ':{
                 
-                'Oximetría : ': instance.historia.familiar.oximetria,
-                'Frecuencia respiratoria : ': instance.historia.familiar.f_respiratoria,
-                'Frecuencia cardiaca : ': instance.historia.familiar.f_cardiaca,
-                'temperatura : ': instance.historia.familiar.temperatura,
-                'Presion Arterial : ': instance.historia.familiar.p_arterial,
-                'Glicemias : ': instance.historia.familiar.glicemias
+            #     'Oximetría : ': instance.historia.familiar.oximetria,
+            #     'Frecuencia respiratoria : ': instance.historia.familiar.f_respiratoria,
+            #     'Frecuencia cardiaca : ': instance.historia.familiar.f_cardiaca,
+            #     'temperatura : ': instance.historia.familiar.temperatura,
+            #     'Presion Arterial : ': instance.historia.familiar.p_arterial,
+            #     'Glicemias : ': instance.historia.familiar.glicemias
 
-             }
+            #  }
 
         }
 
