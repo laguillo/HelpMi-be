@@ -1,6 +1,6 @@
 from django.db import models
 
-from Backend.models.historiaClinica import Historia
+from .historiaClinica import Historia
 from .user import User, models
 
 class Medico(models.Model):

@@ -1,8 +1,7 @@
-from tkinter.font import families
 from django.db import models
-from Backend.models.historiaClinica import Signos_vitales
 
-from Backend.models.paciente import Paciente
+from .historiaClinica import Historia
+from .paciente import Paciente
 from .user import User, models
 
 class Familiar(models.Model):

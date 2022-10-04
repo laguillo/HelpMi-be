@@ -1,6 +1,6 @@
 from django.db import models
 
-from Backend.models.familiar import Familiar
+from .familiar import Familiar
 from .user import User
 from .medico import Medico
 

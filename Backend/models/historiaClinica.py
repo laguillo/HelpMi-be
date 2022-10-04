@@ -1,9 +1,9 @@
 from django.db import models
-from Backend.models.familiar import Familiar
-from Backend.models.medico import Medico
 
-from Backend.models.paciente import Paciente
-from Backend.models.user import User
+from .user import User
+from .paciente import Paciente
+from .familiar import Familiar
+from .medico import Medico
 
 
 class Historia(models.Model):
