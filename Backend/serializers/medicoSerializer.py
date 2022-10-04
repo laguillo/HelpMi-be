@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from Backend.models.medico import Medico
+from models.medico import Medico
 
 class MedicoSerializer(serializers.ModelSerializer):
     class Meta:
@@ -8,8 +8,8 @@ class MedicoSerializer(serializers.ModelSerializer):
 
     def to_representation(self, instance):
         return {
-            'Nombre Medico : ': instance.usuario.nombre,
-            'Apellido Medico : ': instance.usuario.apellido,
+            'Nombre Medico : ': instance.usuario_m.nombre,
+            'Apellido Medico : ': instance.usuario_m.apellido,
             'Especialidades : ': instance.id.especialidad,
             'Diagnosticos : ': instance.id.diagnostico,
             'Nombre Paciente : ': instance.historia.paciente.usuario.nombre,
@@ -22,7 +22,7 @@ class MedicoSerializer(serializers.ModelSerializer):
                 'Frecuencia cardiaca : ': instance.historia.familiar.f_cardiaca,
                 'temperatura : ': instance.historia.familiar.temperatura,
                 'Presion Arterial : ': instance.historia.familiar.p_arterial,
-                'Glicemias : ': instance.historia.familiar.glicemias,
+                'Glicemias : ': instance.historia.familiar.glicemias
 
              }
 
