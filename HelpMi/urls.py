@@ -23,11 +23,11 @@ urlpatterns = [
     path('refresh/', TokenRefreshView.as_view()),
     path('user/', views.UserCreateView.as_view()),
     path('user/<int:pk>/', views.UserDetailView.as_view()),
+    path('paciente/', views.createpaciente()),
+    path('paciente/<int:pk>/', views.detailpaciente()),
     
     # path('medico/', views.MedicoListCreateView.as_view()),  
     # path('medico/<int:pk>/', views.MedicoRetrieveUpdateView.as_view()),
     # path('admin/', admin.site.urls),
-    # path('paciente/', views.createpaciente),
-    # path('paciente/<int:pk>/', views.detailpaciente),
     # path('userlogin/', views.usercreateview.as_view()),
 ]
