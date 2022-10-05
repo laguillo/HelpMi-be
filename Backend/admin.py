@@ -1,10 +1,10 @@
 from django.contrib import admin
 
-from .models.historiaClinica import Historia
-from .models.familiar import Familiar
-from .models.user import User
-from .models.medico import Medico
-from .models.paciente import Paciente
+from Backend.models.historiaClinica import Historia
+from Backend.models.familiar import Familiar
+from Backend.models.user import User
+from Backend.models.medico import Medico
+from Backend.models.paciente import Paciente
 
 # Register your models here.
 admin.site.register(User)

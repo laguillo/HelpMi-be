@@ -1,9 +1,9 @@
 from rest_framework import status
 from rest_framework.response import Response
-from Backend.models.paciente import Paciente
 from serializers.pacienteSerializer import PacienteSerializer
 from rest_framework.decorators import api_view
 
+from Backend.models.paciente import Paciente
 
 @api_view(['GET', 'POST'])
 def createpaciente(request):
@@ -33,5 +33,3 @@ def detailpaciente(request, pk):
         modelo = Paciente.objects.get(pk=pk)
         modelo.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
-
-        #
