@@ -11,3 +11,5 @@ class Historia(models.Model):
     glicemias = models.FloatField('Glicemias', max_length=5)
     diagnostico = models.CharField('Diagnostico', max_length=500)
     cuidados = models.CharField('Cuidados', max_length=500)
+    fecha_reporte = models.DateTimeField()
+    fecha_analisis_medico = models.DateField()
