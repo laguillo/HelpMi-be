@@ -10,6 +10,7 @@ tipoDoc = [
 ]
 
 rol = [
+    ("A", "Auxiliar"),
     ("E", "Enfermero"),
     ("M", "Medico"),
     ("P", "Paciente"),

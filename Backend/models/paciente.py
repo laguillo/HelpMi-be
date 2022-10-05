@@ -12,5 +12,5 @@ class Paciente(models.Model):
     usuario = models.ForeignKey(User, on_delete=models.CASCADE)
     familiar = models.ForeignKey(Familiar, on_delete=models.CASCADE)
     medico = models.ForeignKey(Medico, on_delete=models.CASCADE)
-    historia_p = models.ForeignKey(Historia, on_delete=models.CASCADE)
-    enfermero_p = models.ForeignKey(Enfermero, on_delete=models.CASCADE)
+    historia = models.ForeignKey(Historia, on_delete=models.CASCADE)
+    enfermero = models.ForeignKey(Enfermero, on_delete=models.CASCADE)
