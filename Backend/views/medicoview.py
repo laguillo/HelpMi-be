@@ -1,9 +1,10 @@
 from rest_framework import generics, status
 from rest_framework.response import Response
+from Backend.serializers import medicoSerializer
 #from rest_framework_simplejwt.serializers import TokenObtainPairSerializer
 from serializers.medicoSerializer import MedicoSerializer
 
-from models.medico import Medico
+from Backend.models.medico import Medico
 
 class MedicoListCreateView(generics.ListCreateAPIView):
     queryset = Medico.objects.all()
@@ -19,7 +20,7 @@ class MedicoListCreateView(generics.ListCreateAPIView):
     def post(self, request, *args, **kwargs):
         print("POST a Medico")
         usuarioData = request.data.pop('usuario')
-        serializerU  = medicoSerializer(data=usuarioData)
+        serializerU  = MedicoSerializer(data=usuarioData)
         serializerU.is_valid(raise_exception=True)
         usuario = serializerU.save()
         enfData = request.data   
