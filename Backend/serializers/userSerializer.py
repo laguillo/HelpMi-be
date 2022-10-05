@@ -5,8 +5,7 @@ from Backend.models.user import User
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
-        fields = ['id', 'username', 'password', 'rol', 'nombre',
-                  'apellido', 'documento', 'tipoDocumento', 'email', 'celular', 'direccion', 'genero']
+        fields = '__all__'
 
     def create(self, validated_data):
         userInstance = User.objects.create(**validated_data)
