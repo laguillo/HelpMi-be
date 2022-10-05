@@ -1,9 +1,11 @@
 from django.db import models
 
+from Backend.models.familiar import Familiar
+
 from .enfermero import Enfermero
 from .historiaClinica import Historia
 from .medico import Medico
-from .familiar import Familiar
+# from .familiar import Familiar
 from .user import User
 
 
