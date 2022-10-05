@@ -23,7 +23,7 @@ urlpatterns = [
     path('refresh/', TokenRefreshView.as_view()),
     path('user/', views.UserCreateView.as_view()),
     path('user/<int:pk>/', views.UserDetailView.as_view()),
-    # path('paciente/', views.pacienteView.as_view()),
+    path('paciente/', views.pacienteView.as_view()),
     # path('paciente/', views.pacienteView.createpaciente()),
     # path('paciente/<int:pk>/', views.pacienteView.detailpaciente()),
     
