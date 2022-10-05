@@ -12,9 +12,11 @@ class MedicoSerializer(serializers.ModelSerializer):
             'Apellido Medico : ': instance.usuario_m.apellido,
             'Especialidades : ': instance.id.especialidad,
             'Diagnosticos : ': instance.id.diagnostico,
-            # 'Nombre Paciente : ': instance.historia.paciente.usuario.nombre,
-            # 'Apellido Paciente : ': instance.historia.paciente.usuario.nombre,
-
+            
+            'Paciente : ':{
+            'Nombre Paciente : ': instance.historia.paciente.usuario.nombre,
+            'Apellido Paciente : ': instance.historia.paciente.usuario.nombre,
+            }
             # 'Historia : ':{
                 
             #     'Oximetría : ': instance.historia.familiar.oximetria,
