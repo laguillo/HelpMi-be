@@ -1,7 +1,6 @@
 from rest_framework import status
 from rest_framework.response import Response
 from Backend import views
-from Backend.serializers import pacienteSerializer
 from Backend.serializers.pacienteSerializer import PacienteSerializer
 from rest_framework.decorators import api_view
 
