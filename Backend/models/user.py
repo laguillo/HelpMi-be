@@ -32,15 +32,15 @@ class User(AbstractBaseUser, PermissionsMixin):
     id = models.BigAutoField(primary_key=True)
     username = models.CharField('Username', max_length=15, unique=True)
     password = models.CharField('Password', max_length=256)
-    rol = models.CharField('Rol', max_length=1, choices=rol, default='P')
+    rol = models.CharField('Rol', max_length=50, choices=rol, default='P')
     nombre = models.CharField('Nombre', max_length=30)
     apellido = models.CharField('Apellido', max_length=30)
-    tipoDocumento = models.CharField('Tipo de documento', max_length=2, choices=tipoDoc, default='CC')
+    tipoDocumento = models.CharField('Tipo de documento', max_length=50, choices=tipoDoc, default='CC')
     documento = models.PositiveIntegerField('Documento', default=0)
     email = models.EmailField('Email', max_length=100)
     celular = models.CharField('Celular', max_length=10)
     direccion = models.CharField('Dirección', max_length=50)
-    genero = models.CharField('Genero', max_length=1, choices=genero, default="F")
+    genero = models.CharField('Genero', max_length=50, choices=genero, default="F")
     
     def save(self, **kwargs):
         some_salt = 'mMUj0DrIK6vgtdIYepkIxN'

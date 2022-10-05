@@ -113,12 +113,21 @@ WSGI_APPLICATION = 'HelpMi.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'daod9i03t4farg',
-        'USER': 'rnbhfwphrlrgzt',
-        'PASSWORD': 'ac7ddec0dea9f553c724c6b0298d4c04ff67334cb2c5f019d4848c341aa02236',
-        'HOST': 'ec2-54-157-74-211.compute-1.amazonaws.com',
+        'NAME': 'helpmi',
+        'USER': 'postgres',
+        'PASSWORD': 'root',
+        'HOST': 'localhost',
         'PORT': '5432',
     }
+
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.postgresql_psycopg2',
+    #     'NAME': 'daod9i03t4farg',
+    #     'USER': 'rnbhfwphrlrgzt',
+    #     'PASSWORD': 'ac7ddec0dea9f553c724c6b0298d4c04ff67334cb2c5f019d4848c341aa02236',
+    #     'HOST': 'ec2-54-157-74-211.compute-1.amazonaws.com',
+    #     'PORT': '5432',
+    # }
 }
 
 # Password validation

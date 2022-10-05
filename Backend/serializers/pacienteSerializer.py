@@ -3,4 +3,4 @@ from models.paciente import Paciente
 class PacienteSerializer(serializers.ModelSerializer):
     class Meta:
         model = Paciente
-        fields = '__all__'
+        fields = ['nombre', 'apellido']
